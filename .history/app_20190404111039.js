@@ -5,8 +5,7 @@ new Vue({
             name: 'Vamshi Krishna',
             url: 'https://robohash.org/',
             avatar: '',
-            set: '',
-            tutorialLink: ''
+            set: ''
         }
     },
     computed:{

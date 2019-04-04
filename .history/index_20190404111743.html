@@ -11,13 +11,13 @@
 <body>
     <div class="robohash">
         <h1>RoboHash With Vue JS</h1>
-        <section>   
-                <h1><a :href="tutorialLink"> Learn How To Make This</a></h1>
-            </section>
         <img :src="returnRoboAvatar" alt=""><br>
         <input type="text" v-model="avatar" placeholder="Enter Your Name">
         <input type="text" placeholder="Enter Set Number" v-model="set">
         <p>You can Add Sets from 1-4</p>
+        <section>   
+            <h1><a :href="tutorialLink"> Learn How To Make This</a></h1>
+        </section>
     </div>
     <script src="app.js"></script>
 </body>
@@ -35,10 +35,7 @@
     }
 
     .robohash > input{
-        padding: 3em;
-        width: 80%;
-        margin: 1em;
-        font-size: 1em;
+        padding: 1em;
     }
 
     section{

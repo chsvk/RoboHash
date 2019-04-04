@@ -4,20 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <title>Document</title>
 </head>
 <body>
     <div class="robohash">
-        <h1>RoboHash With Vue JS</h1>
-        <section>   
-                <h1><a :href="tutorialLink"> Learn How To Make This</a></h1>
-            </section>
-        <img :src="returnRoboAvatar" alt=""><br>
+        <img :src="returnRoboAvatar" alt="">
         <input type="text" v-model="avatar" placeholder="Enter Your Name">
+        <p>{{name}}</p>
         <input type="text" placeholder="Enter Set Number" v-model="set">
-        <p>You can Add Sets from 1-4</p>
     </div>
     <script src="app.js"></script>
 </body>
@@ -29,26 +24,7 @@
         width: 500px;
     }
 
-    .robohash > h1{
-        text-align: center;
-        margin: 1em;
-    }
-
     .robohash > input{
-        padding: 3em;
-        width: 80%;
-        margin: 1em;
-        font-size: 1em;
-    }
-
-    section{
-        background: lightcoral;
-        text-align: center;
         padding: 1em;
-    }
-
-    section > h1 > a{
-        text-decoration: none;
-        color: white;
     }
 </style>
