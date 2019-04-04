@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="robohash">
+        <img :src="returnRoboAvatar" alt="">
+        <input type="text" v-model="avatar" placeholder="Enter Your Name">
+        <p>{{name}}</p>
+        <input type="text" placeholder="Enter Set Number" v-model="set">
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
+<style>
+    .robohash > img {
+        height: 500px;
+        width: 500px;
+    }
+
+    .robohash > input{
+        padding: 1em;
+    }
+</style>
